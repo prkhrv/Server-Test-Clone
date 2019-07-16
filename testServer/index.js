@@ -8,5 +8,9 @@ app.get('/',function(req,res){
 
 });
 
-app.listen(port);
-console.log(" REST API server 2 Stared on "  +port);
+var server = app.listen(port,"101.53.144.170",function(){
+	var host = server.address().address;
+    var port = server.address().port;
+    console.log('running at http://' + host + ':' + port)
+
+});
