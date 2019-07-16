@@ -8,7 +8,7 @@ app.get('/',function(req,res){
 
 });
 
-var server = app.listen(port,"101.53.144.170",function(){
+var server = app.listen(port,"0.0.0.0",function(){
 	var host = server.address().address;
     var port = server.address().port;
     console.log('running at http://' + host + ':' + port)
