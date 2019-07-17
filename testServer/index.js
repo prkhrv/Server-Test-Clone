@@ -4,7 +4,7 @@ var port = process.env.PORT || 80;
 
 
 app.get('/',function(req,res){
-    res.json({ok:"yes"});
+    res.json({ok:"no"});
 
 });
 
